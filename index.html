@@ -1,42 +1,462 @@
----
-layout: page
-description: "Thinking will not overcome fear but action will."
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title>绿湾</title>
+    <link rel="stylesheet" href="//s.quanmin110.com/s/css/swiper.min.css">
+    <link rel="shortcut icon" href="//s.quanmin110.com/s/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//s.quanmin110.com/s/img/mobile110_icon@144.png">
+	<script src="https://s.quanmin110.com/s/js/jquery-2.1.1.min.js"></script>
+	<script src="//s.quanmin110.com/s/js/swiper-3.4.1.jquery.min.js"></script>
+    <!--移动端适配-->
+    <script>
+       (function(doc, win) {
+		    var docEl = doc.documentElement,
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		    recalc = function() {
+		    		var clientWidth = docEl.clientWidth;
+			    if (!clientWidth) {
+			    		return;
+			    } else if (750 >= clientWidth) {
+			    		docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			    } else {
+			    		docEl.style.fontSize = '100px';
+			    }
+		    };
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+    </script>
+    <style type="text/css">
+    		html,body,div,span,object,embed,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,cite,code,del,dfn,em,img,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,tbody,tfoot,thead,tr,th,td,section,article{margin:0;padding:0;-webkit-text-size-adjust:none;}
+		*:focus {outline: none;}
+		* { -webkit-tap-highlight-color: transparent; -webkit-appearance: none; border:0}
+		table{border-collapse:collapse; border-spacing:0;}
+		html,body{width:100%; }
+		img{border:none; max-width:100%; vertical-align:middle;}
+		ul,li,ol {list-style:none;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:0.24rem;min-height:0rem;}
+		em,cite,dfn{font-style:normal;}
+		.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+		.clearfix{*display:inline-block; *zoom:100%;}
+		.clear{clear:both; line-height:1px; height:1px; *display:inline; font-size:1px;}
+		.fl{float:left;}
+		.fr{float:right;}
+		.alignL{text-align:left;}
+		.alignC{text-align:center;}
+		.alignR{text-align:right;}
+		.relative{position:relative;}
+		.absolute{position:absolute;}
+		.none{display:none;}
+		.block{display:block;}
+		.overf{overflow:hidden;}
+		.opacity{opacity:0.5;}
+		:focus,a{outline:none; -moz-outline-style:none;}
+		a:visited,a:link{text-decoration:none;}
+		a:hover {text-decoration:none;}
+		.middle{vertical-align: middle;}
+		.font24{font-size:.24rem;}
+		.font26{font-size:.26rem;}
+		.font28{font-size:.28rem;}
+		.font30{font-size:.30rem;}
+		.font32{font-size:.32rem;}
+		.font34{font-size:.34rem;}
+		.font36{font-size:.36rem;}
+		.line_h0{line-height:0px;}
+		.center{margin:0 auto;}
+		.max640{max-width:640px;}
+		.full_screen{width: 100%; height: 100%; overflow: hidden;}
+		body{color: #333;padding-bottom: 0.5rem;font:.14rem/1.5 "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,Arial;background: #f2f4f8; position: relative;}
+		.banner {
+			width: 100%;
+			height: 3.56rem;
+			background: url(//s.quanmin110.com/s/img/index/index_banner.jpg) no-repeat center;
+	    		background-size: 100% 100%;
+		}
+		.nav {
+			width: 100%;
+			clear: both;
+			overflow: hidden;
+			background: #fff;
+		}
+		.navBox {
+			width: 100%;
+			height: 0.7rem;
+		}
+		.navFixed {
+			position: fixed;
+			top: 0px;
+		}
+		.nav li {
+			float: left;
+			width: 25%;
+			display: block;
+			font-size: 0.32rem;
+			color: #333;
+			text-align: center;
+		}
+		.nav li span {
+			border-top: 2px solid #fff;
+			width: auto;
+			border-bottom: 2px solid #fff;
+			display: inline-block;
+			padding: 0.2rem 0;
+		}
+		.nav li.act span {
+			color: #44C580;
+			border-bottom: 2px solid #44C580;
+		}
+		.swiper-container {
+	      width: 100%; 
+	    }
+	    .swiper-slide div{
+	    		padding: 0.4rem 0.3rem;
+		    font-size: 0.36rem;
+		    background: #fff;
+		    margin-top: 0.2rem;
+	    }
+	    .swiper-slide div h1 {
+	    		font-size: 0.48rem;
+	    }
+	    .swiper-slide div h2 {
+	   	 	font-size: 0.28rem;
+	   	 	margin-bottom: 0.3rem;
+	    }
+	    .swiper-slide div h3 {
+	   	 	font-size: 0.36rem;
+	   	 	margin-bottom: 0.2rem;
+	    }
+	    .swiper-slide div h4 {
+	   	 	font-size: 0.28rem;
+	   	 	margin-top: 0.3rem;
+	   	 	font-weight: 900;
+	   	 	margin-bottom: 0.05rem;
+	    }
+	    .swiper-slide div p {
+	   	 	font-size: 0.28rem;
+	   	 	color: #666;
+	    }
+	    .swiper-slide div hr {
+	    		width: 100%;
+	    		margin-top: 0.6rem;
+	    		border-top: 1px solid #ccc;
+	    }
+	    .swiper-slide div .imgs {
+	    		width: 100%;
+	    		margin-bottom: 1.0rem;
+	    }
+	    .swiper-slide div .imgs:last-child {
+	    		width: 100%;
+	    		margin-bottom: 0rem;
+	    }
+	    .swiper-slide3 div li {
+	    		border-radius: 3px;
+	    		background: #ECF4F0;
+	    		padding: 0.1rem;
+	    		margin-bottom: 0.2rem;
+	    }
+		.swiper-slide div li h4 {
+			margin-top: 0.1rem;
+		}
+		.swiper-slide div.p_box p {
+			margin-bottom: 0.3rem;
+		}
+		.swiper-slide4 li img{
+			width: 2.44rem;
+		}
+		.swiper-slide4 li ul{
+			margin-left: 0.4rem;	
+		}
+		.swiper-slide4 li img{
+			margin: 0.3rem 0;
+		}		
+		.swiper-slide4 li ul li{
+			font-size: 0.24rem;
+			list-style:disc;
+			color: #666;
+		}
+		.swiper-slide4 li h4{
+			margin-bottom: 0.3rem;
+		}
+		.swiper-slide4 .ulBg li {		
+			clear: both;
+			overflow: hidden;
+			font-size: 0.28rem;
+			color: #666;
+			background: #F2F4F8;
+			border-radius: 5px;
+			margin-bottom: 0.2rem;
+			padding: 0.3rem;	
+			position: relative;		
+		}
+		.swiper-slide4 .ulBg li span{
+			display: block;
+			color: #44C580;
+			position: absolute;
+			height: 0.4rem;
+			line-height: 0.4rem;
+			top: 50%;
+			margin-top: -0.2rem;
+		}
+		.swiper-slide4 .ulBg em {
+			width: 90%;
+			float: left;
+			margin-left: 0.8rem;
+		}
+	    .logo {
+	    		width: 4.12rem;
+	    		margin-bottom: 0.3rem;
+	    }
+	    .info {
+	    		display: block;
+	    		width: 95%;
+	    		margin: 0 auto;
+	    		margin-top: 0.3rem;
+	    }	
+    </style>
+</head>
+<body>
+	<div class="banner">
+		
+	</div>
+	<ul class="nav">
+		<li class="act"><span>绿湾</span></li>
+		<li><span>掌上110</span></li>
+		<li><span>阿拉警察</span></li>
+		<li><span>智子</span></li>
+	</ul>
+	<div class="navBox none"></div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    		<div class="swiper-slide swiper-slide1">
+			      <div>
+			      		<h1>公司介绍</h1>
+			      		<h2>COMPANY INTRODUCTION</h2>
+			      		<p>绿湾成立于2014年9月，是一家拥有核心大数据技术和产品的创新型互联网高科技公司，聚焦公共安全、政府管理领域以及企业风控方向，专注于为公安、法院、检察院、证券、发改委等政府机构以及企业提供大数据智能分析等解决方案，编织以人为节点的行业知识图谱，结合机器学习技术和业务专家经验打造行业人工智能，支撑公安、法院、检察院、证券、发改委、金融、工业等政府部门和企业开展情报分析、案件侦查、智慧城市治理、打击非法交易以及互联网+政务、智慧城市建设等一线业务工作，核心目标是打造“更懂人”的大数据智脑。</p>
+			      </div>
+			      <div>
+			      		<h1>战略合作</h1>
+			      		<h2>STRATEGICCOOPERATION</h2>
+			      		<p>绿湾是浙江省委省政府“最多跑一次”工程和省厅“移动互联网政务综合平台”的技术支撑方，承接着浙江公共安全技术研究院大数据技术产品的研究和运维任务，也是公安部大数据重点实验室的社会面数据综合应用课题组成员和安全防范技术与风险评估公安部重点实验室的合作单位，与公安大学建立了战略合作关系，专门为其设立了百万元的“绿湾奖励基金”，联合成立了“公共安全大数据实验室”。绿湾与公安部第一研究所具有密切的战略合作关系，是其大数据技术产品的主要提供者。</p>
+			      </div>
+			      <div>
+			      		<h1>团队介绍</h1>
+			      		<h2>TEAM INTRODUCTION</h2>
+			      		<p>绿湾拥有国内顶尖的大数据研发和业务团队，大部分成员毕业于清华、北大、浙大、哈工大、斯坦福、加州等一流大学，核心技术成员均来自百度、阿里、腾讯等一线互联网公司的T9（P9）、T10(P10、T4)级别的顶尖专家，在大数据挖掘、机器学习、图像识别、语音识别、自然语言处理等多个领域具有一系列成功应用经验。</p>
+			      </div>
+			      <div>
+			      		<h1>商务合作</h1>
+			      		<h2>BUSINESS COOPERATION</h2>
+			      		<p>邮箱  zhouzhaosheng@lvwan.com</p>
+						<p>电话  18368140426</p>
+			      </div>
+		     </div>
+		     <div class="swiper-slide swiper-slide2">
+	    			<div>
+	    				<img class="logo" src="//s.quanmin110.com/s/img/index/index_logo_110.png"/>
+	    				<h3>掌上110简介</h3>
+	    				<p>掌上110是基于互联网+、公安大数据，面向公众推出的公安便民服务平台。通过公安大数据应用整合，实现全省统一的网上审批、办事、服务、宣传、信息采集,让数据代替群众跑腿。  掌上110也是2017年浙江省公安厅落实“最多跑一次”改革创新项目之一。</p>	    			
+	    			</div>
+	    			<div>
+	    				<h3>掌上110主要功能</h3>
+					<img class="info" src="//s.quanmin110.com/s/img/index/index_info.png"/>
+					<hr />
+					<h4>便捷挪车</h4>
+					<p>只需输入对方车牌并牌照，即可通知对方车主前来挪车，方便快捷，安全有效，还能避免因电话直连而泄露隐私信息。目前已覆盖浙江全省1780多万辆车主，每天响应3.5万次挪车呼叫，成功率95%。</p>
+					<h4>违章查询</h4>
+					<p>通过车牌号+身份证号后四位即可快速查询，无需输入车架号等繁琐流程。</p>
+					<h4>身份认证</h4>
+					<p>面对面身份准确识别，可识别身份洗白、在逃人员等信息。</p>
+					<h4>出入境服务</h4>
+					<p>港澳通行证二次签注可网上直接办理，完成后通过EMS送达；出入境业务办理进度实时查询。</p>
+					<h4>电子证件</h4>
+					<p>忘记带驾照可通过手机APP出示电子驾照或者二维码替代；通过人脸识别技术将驾照与个人身份证比对并加密，减少个人信息泄漏。</p>
+	    			</div>
+	    			<div>
+	    				<h3>掌上110产品成效</h3>
+	    				<p>注册用户突破2300万，每年提供业务办理、查询服务约2.9亿人次。</p>
+	    				<li>
+	    					<h4>平台服务</h4>
+	    					<p>接入微信城市服务、支付宝城市服务、微信公众号，且支撑了部分汽车服务类APP的服务。</p>
+	    				</li>
+	    				<li>
+	    					<h4>释放警力</h4>
+						<p>年服务2.9亿人次，挪车、报警举报功能每年可直接降低出警1000万人次，占接警量40%。</p>
+	    				</li>
+	    				<li>
+	    					<h4>数据采集</h4>
+	    					<p>人、车关联数据及时更新，通过身份认证协助公安针对网上追逃、身份洗白人员实时预警。</p>
+	    				</li>
+	    				<li>
+	    					<h4>社会反响</h4>
+	    					<p>曾荣获全国公安机关改革创新大赛优秀奖，受到央视及主流媒体集中报道并获充分肯定。</p>
+	    				</li>
+	    				<li>
+	    					<h4>提升口碑</h4>
+	    					<p>改变政府监管职能形象，提供方便快捷的便民服务通道。</p>
+	    				</li	>  		
+	    			</div>
+	    			<div>
+	    				<h3>获奖证书及社会反响</h3>
+	    				<img class="imgs" src="//s.quanmin110.com/s/img/index/img1.jpg" alt="" />
+	    				<img class="imgs" src="//s.quanmin110.com/s/img/index/img2.jpg" alt=""/>
+	    			</div>
+	    		</div>
+      		
+	    		<div class="swiper-slide swiper-slide3">
+	    			<div>
+	    				<img class="logo" src="//s.quanmin110.com/s/img/index/index_logo_ala.png"/>
+	    				<h3>阿拉警察简介</h3>
+	    				<p>“阿拉警察”共聚合了169项行政审批类、便民服务类和新闻资讯类等服务功能，包括“交管”“出入境”“治安”“消防”“监管”“边防”“网安”“综合”等八大类。宁波公安通过整合贴近百姓生活的热点公安业务，以百姓的“刚需”为基础，进而开发上线的集审批事项、便民服务、阳光政务、社会宣传、警民互动于一体的全功能公安服务APP。</p>	    			
+	    			</div>
+	    			<div>
+	    				<h3>阿拉警察主要功能</h3>				
+					<h4>交管服务</h4>
+					<p>共上线涉及驾考、违章、年检、道路拥堵等方面的26项功能，其中便捷挪车、驾照查分、交通违法查询及在线处理是最具代表性的。</p>
+					<h4>出入境服务</h4>
+					<p>集合了出入境签证证件预审核、港澳再签注、受理地点、办理进度查询、在线填表、电子缴费、预约及填表、商务签注单位备案、中介协议书式样备案等各类服务。</p>
+					<h4>治安服务</h4>
+					<p>治安服务集合申报居住登记、申报注销变更、身份证办证进度查询、短信报警、出租房屋申报等多项便民服务与审批事项。</p>
+					<h4>证照电子化</h4>
+					<p>以二代居民身份证、居住证、驾驶证、行驶证等相关证件作为信任根，采用动态人脸识别技术、关键字段比对认证等方式完成实人实名验证，将各相关证件以加密二维码的形式呈现在“阿拉警察”中，连接线上系统和线下场景，实现“证照电子化”应用。</p>
+					<h4>区县市公安服务板块</h4>
+					<p>更切合社会群众地区办事特性，增加县区二级功能板块以及办事事项流程指南。根据地理位置自动定位宁波市下14个县市区，为群众提供区县市的特色办事、服务功能。</p>
+	    			</div>
+	    			<div class="p_box">
+	    				<h3>打造全国首个“无证照城市”</h3>
+	    				<p>宁波公安证照电子化应用是以二代居民身份证、居住证、驾驶证、行驶证等相关证件作为信任根，采用动态人脸识别技术、关键字段比对认证等方式完成实人实名验证，将各相关证件以加密二维码的形式呈现在“阿拉警察”中，通过使用阿拉警察扫码功能或其他扫码设备扫码读取电子证照二维码加密信息获取个人实体证件的同步信息，连接线上系统和线下场景，实现“证照电子化”应用。</p>
+	    				<p>目前，可在“阿拉警察”中以二维码展现的证照信息包括身份证、驾驶证、行驶证、居住证以及电动自行车防盗登记信息等。</p>
+	    				<p>证照电子化应用在宁波地区已经实现了网吧上网登记、旅馆入住登记、散装汽油购买登记、交警违法处理服务窗口办事中需出示驾驶证的情形、民警路面核查、电动自行车防盗信息核查等7大场景的应用。</p>
+	    			</div>
+	    		</div>
+	    		<div class="swiper-slide swiper-slide4">
+	    			<div>
+			      		<h1>智子平台介绍</h1>
+			      		<h2>SOPHON PLATFORM INTRODUCTION</h2>
+			      		<h3>产品背景</h3>
+			      		<p>在与公安机关等政府部门长期合作中发现，政府部门在应用数据方面面临诸多困难：一是海量非格式数据无法得到应用，成为死数据；二是跨区域、跨行业、跨警种数据隔离；三是一个地区并存多套应用系统，相互之间数据不能及时打通等。</p>
+			      		<h3 style="margin-top: 0.3rem;">产品简介</h3>
+			      		<p>“智子”致力于成为“更懂人”的大数据智脑，采用最先进的机器学习技术，通过对文字、图片、音频、视频等各种媒介格式的海量数据进行挖掘处理、分析，将全量、多维、动态数据转化为统一格式存储，从而建立成以人为节点的关系分析模型，并进一步计算和挖掘以人为实体的时间与空间关联，形成全文检索、图谱分析、时空分析等各种可视化工具。公安部有关业务部门领导、公安大学有关专家及有关地方公安厅局领导考察“智子”产品后，普遍认为“智子”的大数据深度挖掘分析功能在国内明显处于领先地位，且具有强大的发展潜力。</p>
+			      </div>
+			      <div>
+			      		<h3>产品功能</h3>
+			      		<ul>
+			      			<li>
+			      				<img src="//s.quanmin110.com/s/img/index/li1.png"/>
+			      				<ul>
+			      					<li>基于本体论建模，可兼容结构化、非结构化数据</li>
+			      					<li>高效满足500+个公安业务实战场景中的关联运算</li>
+			      					<li>PB级数据毫秒级响应，数据导入速度比传统工具快10倍</li>
+			      					<li>数据清洗智能化、精准度高、完整性好</li>
+			      				</ul>
+			      			</li>
+			      			<li>
+			      				<img src="//s.quanmin110.com/s/img/index/li4.png"/>
+			      				<h4>属性搜索、关系搜索、语义搜索、文档解析</h4>
+			      				<ul>
+			      					<li>支持多种类型搜索（实体搜索、关联搜索、事件搜等）</li>
+			      					<li>智能解析搜索内容（文档、图片、自然语言等多种式）</li>			      					
+			      				</ul>
+			      			</li>
+			      			<li>
+			      				<img src="//s.quanmin110.com/s/img/index/li3.png"/>
+			      				<h4>关系分析、多维关系挖掘、时序图分析</h4>
+			      				<ul>
+			      					<li>海量图谱分析能力，能同时分析、展现数千节点的网络关系</li>
+			      					<li>实时计算关联关系，无限挖掘关系网络</li>		
+			      					<li>支持多维关系分析，可支持4度关联关系</li>
+			      					<li>支持话单分析、交易分析等时序图分析模式</li>
+			      				</ul>
+			      			</li>
+			      			<li>
+			      				<img src="//s.quanmin110.com/s/img/index/li2.png"/>
+			      				<h4>数据上图、轨迹碰撞、地图挖掘</h4>
+			      				<ul>
+			      					<li>可将任意地址信息转换成经纬度的平台</li>
+			      					<li>可实时分析超过50万个位置点</li>		
+			      					<li>可实时进行轨迹碰撞，挖掘出同轨迹人员</li>			      					
+			      				</ul>
+			      			</li>
+			      		</ul>
+			      </div>
+			      <div>
+			      	<h3>在吉林、浙江、最高检等试点<br />应用重点成果</h3>
+			      	<ul class="ulBg">
+			      		<li>
+			      			<span>抓逃</span>
+			      			<em>帮助浙江省公安厅情报系统分析定位出2000多个逃犯；</em>
+			      		</li>
+			      		<li>
+			      			<span>安防</span>
+			      			<em>为G20峰会安保工作发挥了重要的辅助作用；</em>
+			      		</li>
+			      		<li>
+			      			<span>破案</span>
+			      			<em>成功完成了宁波绿洲珠宝案的数据分析任务；在吉林也帮助一线民警破获多个案件；</em>
+			      		</li>			      		
+			      	</ul>
+			      </div>
+			      <div>
+			      	<h3>实战案例</h3>
+			      	<p>通过卡口布控、人像比对、图谱挖掘，锁定嫌疑人身份。</p>
+			      	<h4>案件背景</h4>
+			      	<p>某市公安获取到一张嫌疑人的车辆卡口照片，该车辆车牌号为浙XXXXXX，车主为许某，但无法断定驾驶者是否就是许某，此时，警官XX借助智子平台确认了嫌疑人的身份。</p>
+			      	<h4>解决方案</h4>
+			      	<img src="//s.quanmin110.com/s/img/index/lastImg.png"/>
+			      </div>
+	    		</div>
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+	    </div>
+  	</div>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+</body>
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container',{
+		autoHeight:true,
+		onSlideChangeEnd:function(swiper){
+	       $(".nav li").eq(swiper.activeIndex).addClass("act").siblings("li").removeClass("act");
+	       $("body,html").animate({scrollTop:"160px"},500);//页面滚动到指定高度 
+                                  
+	       // swiper.activeIndex 这个就是索引， 从 0 开始！ 可看一共有多少元素！
+	    }
+	});
+	$(function(){
+		$(".nav li").on("click",function(){
+			$(this).addClass("act").siblings("li").removeClass("act");
+			swiper.slideTo($(this).index());   
+		});	
+    $(window).scroll(function(){
+        var b = $(this).scrollTop();   //页面滚动的高度                
+        if(b>=150){  
+        		$(".navBox").show();
+            $(".nav").css({
+            		"position":"fixed",
+            		"top":"0px",
+            		"z-index":"1000"
+            });
+        }else{
+        		$(".navBox").hide();
+        		 $(".nav").css({
+            		"position":"inherit",
+            		"top":"0px"
+            });
+        		
+        }
+    });
+
+
+	})
+</script>
+</html>
